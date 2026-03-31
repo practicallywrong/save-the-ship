@@ -1,4 +1,4 @@
-## Save The Ship 🚀
+## Save The Ship
 
 A simple survival simulation where a ship tries to avoid incoming asteroids for as long as possible.
 
