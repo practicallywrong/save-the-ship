@@ -4,7 +4,6 @@
 
 Save The Ship
 
----
 
 ## 1. Problem Statement
 
@@ -16,7 +15,6 @@ The core question explored:
 
 Instead of solving a predefined problem, I chose to simulate a scenario where conditions continuously change, forcing the system to react instantly rather than rely on precomputed solutions.
 
----
 
 ## 2. Motivation
 
@@ -34,7 +32,6 @@ It also relates to real-world systems like:
 
 Additionally, it’s a good way to explore how far simple mathematical rules can go in producing intelligent-looking behavior.
 
----
 
 ## 3. Approach
 
@@ -59,7 +56,6 @@ Each frame, the system:
 4. Checks collisions
 5. Renders the scene
 
----
 
 ## 4. AI Design
 
@@ -85,7 +81,6 @@ The final velocity is a combination of:
 
 This produces smooth, continuous movement.
 
----
 
 ## 5. Design Decisions
 
@@ -99,7 +94,6 @@ Pathfinding algorithms were not used because:
 
 Reactive steering provides constant-time decisions and adapts instantly.
 
----
 
 ### Circular Boundary
 
@@ -109,7 +103,6 @@ A circular constraint was chosen instead of a rectangle because:
 * It creates uniform movement constraints
 * It simplifies boundary handling
 
----
 
 ### Difficulty Scaling
 
@@ -120,7 +113,6 @@ Difficulty increases over time through:
 
 This ensures the system is tested under increasingly stressful conditions.
 
----
 
 ## 6. Challenges Faced
 
@@ -133,7 +125,6 @@ Solution:
 * Clamp position inside the safe radius
 * Add a center-directed bias force
 
----
 
 ### Unstable Movement
 
@@ -145,7 +136,6 @@ Solution:
 * Clamp velocity
 * Separate strongest and aggregate influences
 
----
 
 ### Parameter Tuning
 
@@ -156,7 +146,6 @@ Balancing forces required careful tuning:
 
 This required iterative testing and adjustment.
 
----
 
 ## 7. Results
 
@@ -168,7 +157,6 @@ The final system:
 
 In many cases, the AI survives longer than manual control, showing that even simple heuristics can perform well in reactive environments.
 
----
 
 ## 8. Limitations
 
@@ -178,7 +166,6 @@ In many cases, the AI survives longer than manual control, showing that even sim
 
 The system is reactive rather than intelligent in a deeper sense.
 
----
 
 ## 9. Future Improvements
 
@@ -187,12 +174,9 @@ The system is reactive rather than intelligent in a deeper sense.
 * Optimize using spatial partitioning
 * Introduce scoring or evaluation metrics
 
----
 
 ## 10. Conclusion
 
 This project demonstrates that relatively simple vector-based logic can produce effective real-time behavior in dynamic systems.
 
 It highlights how combining multiple small heuristics can lead to emergent and practical solutions without requiring complex algorithms.
-
----

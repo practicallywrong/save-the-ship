@@ -2,8 +2,6 @@
 
 A simple survival simulation where a ship tries to avoid incoming asteroids for as long as possible.
 
----
-
 ## Overview
 
 This project features:
@@ -14,8 +12,6 @@ This project features:
 
 The focus is on real-time decision-making rather than traditional gameplay mechanics.
 
----
-
 ## Features
 
 * Smooth movement using vector math
@@ -23,16 +19,12 @@ The focus is on real-time decision-making rather than traditional gameplay mecha
 * AI based on reactive steering
 * Toggleable debug visualization
 
----
-
 ## Controls
 
 * W A S D → Move (Manual mode)
 * SPACE → Toggle AI
 * H → Toggle ray visualization
 * R → Restart
-
----
 
 ## Setup
 
@@ -44,8 +36,6 @@ cargo run
 
 Make sure Raylib is installed before running.
 
----
-
 ## How the AI Works
 
 The AI:
@@ -56,18 +46,12 @@ The AI:
 
 The final motion is the result of combining these influences each frame.
 
----
-
 ## Purpose
 
 This project was built to explore real-time AI behavior using simple mathematical models instead of complex algorithms.
-
----
 
 ## Future Work
 
 * Smarter AI models
 * Learning-based approaches
 * Performance improvements
-
----
